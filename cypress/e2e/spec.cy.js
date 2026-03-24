@@ -12,6 +12,7 @@ describe('herokuapp tests', () => {
     cy.contains('Shifting Content').click()
     cy.contains('Example 1: Menu Element').click()
     cy.get('ul li').should('have.length', 5)
+    cy.get('ul li').should('be.visible')
   })
 })
 
